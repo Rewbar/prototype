@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Book Day 2 Test</h1>
+
+      <form class="form" action="/TestDay8" method="post">
+
+        <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          What type of test do you take?
+        </h1>
+      </legend>
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="what-type-test" name="what-type-test" type="radio" value="Lateral Flow">
+          <label class="govuk-label govuk-radios__label" for="what-type-test">
+            Lateral Flow
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="what-type-test-2" name="what-type-test" type="radio" value="PCR">
+          <label class="govuk-label govuk-radios__label" for="what-type-test">
+            PCR
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="what-type-test-3" name="what-type-test" type="radio" value="Don't know">
+          <label class="govuk-label govuk-radios__label" for="what-type-test">
+            Not sure
+          </label>
+        </div>
+
+      </div>
+
+    </fieldset>
+  </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
